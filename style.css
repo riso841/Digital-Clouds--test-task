@@ -1,0 +1,33 @@
+div {
+    transition-property: border-radius;
+    transition-duration: 700ms;
+   }
+
+   body{
+    height: 1000px;
+    background: rgb(222,222,222);
+    background: linear-gradient(180deg, rgba(237,237,237,1) 35%, rgba(185,185,185,1) 100%);
+   }
+
+   #mainBlock {
+     width: 200px;
+     height: 200px;
+     background-color: rgb(240, 240, 240);
+     box-shadow:  6px 6px 15px rgb(167, 167, 167), -6px -6px 15px rgb(255, 255, 255);
+     border-radius: 23%;
+
+     touch-action: none;
+     user-select: none;
+
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   #mainBlock:active {
+    box-shadow: inset 40px 40px 50px rgb(218, 218, 218), inset -40px -40px 50px rgb(255,255,255);
+    border-radius: 26%;
+   }
+   #mainBlock:hover {
+     cursor: pointer;
+     border-width: 20px;
+   }
